@@ -2,11 +2,11 @@ var express = require('express'),
     app = express(),
     port = process.env.PORT || 8000,
     bodyParse = require('body-parser'),
-    controller = require('./controller');
+    controller = require('./model/controller');
 app.use(bodyParse.urlencoded({extended:true}));
 app.use(bodyParse.json());
 
-var routes = require('./routes');
+var routes = require('./router/routes');
 routes(app);
 
 app.listen(port);
