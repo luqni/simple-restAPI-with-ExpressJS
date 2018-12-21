@@ -1,5 +1,5 @@
-
-var response = require('../res');
+// query yang pakai tanda tanya sedangkan param menggunakan slush
+var response = require('../model/res');
 var connection = require('../db/conn');
 var util = require('util');
 
